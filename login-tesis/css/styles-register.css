@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.contenedor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contenedor-register{
+        background-image: url('/img/Login.png'); 
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding: 20px;
+        border-radius: 15px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+    .user{
+        height: 500px;
+        height: 150px;
+        background-color:#a6d9d996;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .derechas{
+        height: 268px;
+        width: 250px;
+       
+    }
+    .izquierdas{
+        height: 268px;
+        width: 250px;
+     
+        display: flex;
+        flex-direction: column;
+    }
+    .cuadrado {
+        height: 268px;
+        width: 500px;
+      
+        display: flex;
+        
+    }
+    
+    .nombre, .contra {
+        height: 67px;
+        width: 262px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .redondo {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 205px;
+        background-color: #b4ddc0;
+        border-radius: 100px;
+        position: relative;
+    }
+    
+    .iconos {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 120px;
+    }
+    
+    input {
+        border: none;
+        background: none;
+        height: 100%;
+        width: calc(100% - 10px);
+        padding-left: 10px;
+        font-size: 16px;
+        outline: none;
+    }
+    
+    .recuperar {
+        height: 50px;
+        width: 362px;
+        position: fixed;
+        font-size: 13px;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .aceptar {
+        height: 82px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 13px;
+        color: black;
+    }
+    
+    .aceptar .redondo {
+        height: 50px;
+        width: 210px;
+        background-color: #b4ddc0;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    
+    .aceptar button {
+        border: none;
+        background: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    a {
+        color:white;
+    }
+    
+    .izquierda {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagen {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagen img {
+        height: 300px;
+        width: 300px;
+    }
+    .sombra{
+        box-shadow: 0 0 10px -3px black;
+    }
+    
+}
+
+img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+
+}

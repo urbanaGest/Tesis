@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/material-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="contenedor">
+        <section class="izquierda">
+            <div class="imagen">
+                <img src="/img/Diseño sin título.png" alt="">
+            </div>
+        </section>
+        <section class="derecha">
+            <div class="contenedor-login ">
+                <div class="titulo">
+                    Login
+                </div>
+                <div class="cuadrado">
+                    <div class="nombre">
+                        <div class="redondo">
+                            <div class="iconos">
+                                account_circle
+                            </div>
+                            <input type="text" id="username" placeholder="User name" />
+                        </div>
+                    </div>
+
+                    <div class="nombre">
+                        <div class="redondo">
+                            <div class="iconos">
+                                pin
+                            </div>
+                            <input type="text" id="username" placeholder="Numero de residencia" />
+                        </div>
+                    </div>
+
+                    <div class="contra">
+                        <div class="redondo">
+                            <div class="iconos">
+                                lock
+                            </div>
+                            <input type="password" id="password" placeholder="Password" />
+                        </div>
+                    </div>
+                    <div class="recuperar">
+                       <a href="/recuperar-contraseña.html"> olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+                <div class="aceptar">
+                    <div class="redondo">
+                        <button onclick="login()">Sign In</button>
+                    </div>
+                    <!-- <a href="/register.html">Crear cuenta</a> -->
+                </div>
+            </div>
+        </section>
+     
+    </div>
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username && password) {
+                alert("Inicio de sesión exitoso para el usuario: " + username);
+            } else {
+                alert("Introduzca el nombre de usuario y la contraseña.");
+            }
+        }
+    </script>
+</body>
+</html>
